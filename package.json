@@ -1,5 +1,5 @@
 {
-  "name": "postgraphile",
+  "name": "@chronograph-pe/postgraphile",
   "version": "4.4.1-rc.0",
   "description": "A GraphQL schema created by reflection over a PostgreSQL schema 🐘 (previously known as PostGraphQL)",
   "author": "Benjie Gillam <benjie@graphile.org> (https://twitter.com/benjie)",
@@ -44,7 +44,9 @@
     "prepack": "./scripts/build"
   },
   "dependencies": {
-    "@graphile/lru": "^4.4.1-alpha.2",
+    "@chronograph-pe/lru": "latest",
+    "@chronograph-pe/postgraphile-core": "latest",
+    "@graphile-contrib/pg-simplify-inflector": "^5.0.0-beta.1",
     "@types/graphql": "^14.0.3",
     "@types/jsonwebtoken": "^8.3.2",
     "@types/koa": "^2.0.44",
@@ -63,7 +65,6 @@
     "pg": ">=6.1.0 <8",
     "pg-connection-string": "^2.0.0",
     "pg-sql2": "^4.4.1-alpha.2",
-    "postgraphile-core": "4.4.1-alpha.2",
     "subscriptions-transport-ws": "^0.9.15",
     "tslib": "^1.5.0",
     "ws": "^6.1.3"
